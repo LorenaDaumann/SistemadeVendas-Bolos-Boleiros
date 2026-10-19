@@ -24,14 +24,13 @@
 # Para executar o código:
 - Tenha o Xamp instalado e habilite as funções Apache e MySQL dentro do app
 
-- Vá no link: https://demo.phpmyadmin.net/master-config/public/
+- Vá no link: http://localhost/dashboard/
+- -Clique em phpMyAdmin
 - Clique em Novo, escreva o nome do banco como "Aula" e crie ele (Enter)
 - Vá na aba SQL
 - Cole o seguinte código:
+
   
-      CREATE DATABASE bolosboleiros;
-      USE bolosboleiros;
-      
       CREATE TABLE usuario(
           id_usuario INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
           senha VARCHAR(60) NOT NULL,
