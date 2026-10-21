@@ -31,6 +31,9 @@
 - Cole o seguinte código:
 
   
+      CREATE DATABASE bolosboleiros;
+      USE bolosboleiros;
+      
       CREATE TABLE usuario(
           id_usuario INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
           senha VARCHAR(60) NOT NULL,
@@ -40,15 +43,6 @@
       INSERT INTO usuario(nome, senha)
       VALUES ('admin', 'admin'),
              ('teste', '123');
-      
-      CREATE TABLE cliente(
-          id_cliente INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-          cpf VARCHAR(14) NOT NULL UNIQUE,
-          nome VARCHAR(255) NOT NULL,
-          endereco VARCHAR(255) NOT NULL,
-          email VARCHAR(255) NOT NULL,
-          telefone VARCHAR(15) NOT NULL
-      );
       
       CREATE TABLE bolo(
           id_bolo INT PRIMARY KEY AUTO_INCREMENT,
@@ -62,7 +56,9 @@
           
           preco DECIMAL(10,2) NOT NULL, -- DECIMAL para evitar erros de arredondamento em centavos
           tamanho FLOAT NOT NULL, -- Peso em gramas ou diâmetro
-          quantidade INT NOT NULL
+          quantidade INT NOT NULL,
+          
+          foto varchar(500)
       );
       
       INSERT INTO bolo (nomebolo, descricao, massa, camadas, recheios, cobertura, preco, tamanho, quantidade)
@@ -73,9 +69,12 @@
           observacao VARCHAR(1000) NOT NULL,
           data_prazo DATE NOT NULL,
           id_bolo INT NOT NULL,
-          id_cliente INT NOT NULL,
-          FOREIGN KEY (id_bolo) REFERENCES bolo(id_bolo),
-          FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
+      	cpf VARCHAR(14) NOT NULL,
+          nome VARCHAR(255) NOT NULL,
+          endereco VARCHAR(255) NOT NULL,
+          email VARCHAR(255) NOT NULL,
+          telefone VARCHAR(15) NOT NULL,
+          FOREIGN KEY (id_bolo) REFERENCES bolo(id_bolo)
       );
       
       CREATE TABLE historico(
