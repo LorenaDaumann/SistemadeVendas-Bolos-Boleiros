@@ -1,0 +1,86 @@
+/* Página de Login */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#B{
+    background-color: #ffc1c1;  
+}
+
+.FundoLogin{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Esquerda {
+    flex: 1;
+    background-image: url('../img/vitrinebolosbonitos.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.Direita{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 20px;
+    background-color: #ffc1c1;
+}
+
+@media (max-width: 768px) {
+    .FundoLogin {
+        flex-direction: column;
+        height: auto;
+    }
+    .Esquerda {
+        height: 50vh;
+    }
+}
+
+#LoginFundo{
+    background-color: #ffe9e9;
+    height: 800px;
+    width: 700px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+
+.form-label{
+    color: #74353d;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-right: 320px;
+    display: inline-block; 
+}
+
+.form-control{
+    background-color: #fff9fc;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 60px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+#BtnEnviar{
+    background-color: #e56979;
+    border-color: #e05f70;
+    margin-top: 20px;
+    height: 60px;
+    width: 400px;
+    border-radius: 30px;
+    color: #fff9fc;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

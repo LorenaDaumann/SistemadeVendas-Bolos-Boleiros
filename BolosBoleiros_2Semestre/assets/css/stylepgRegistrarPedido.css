@@ -1,0 +1,250 @@
+/* Página de Registrar Pedidos */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#B{
+    background-color: #ffe9e9;  
+}
+
+#Topo {
+    background-color: #ffc1c1;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+#IT{
+    display: flex;
+    align-items: center; 
+    gap: 15px;
+}
+
+#Logo{
+    height: 120px;
+}
+
+#Msg{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff0f0;
+    white-space: nowrap;
+}
+
+#Pesquisar{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 400px; 
+    margin-left: auto; 
+    margin-right: 40px; 
+}
+
+#Barra{
+    display: flex;
+    width: 100%;
+}
+
+#Campo{
+    padding: 8px 15px;
+    width: 100%;
+    border: 1px solid #e05f70;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+#Botao{
+    padding: 8px 15px;
+    background-color: #e05f70;
+    color: white;
+    border: 1px solid #e05f70;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+#Sair{
+    padding: 8px 18px;
+    background-color: #e05f70;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#Menu{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #ffb1b1;
+}
+
+.nav-menu {
+    display: flex;
+    margin-top: 12px;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: #725255;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #e05f70;
+}
+
+/* ===== FORMULÁRIOS: CADASTRO E REGISTRO DE PEDIDOS ===== */
+
+body#B > form {
+    width: 100%;
+    max-width: 620px;
+    margin: 35px auto 45px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Título do formulário */
+body#B > form h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #74353d;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 0 0 25px;
+}
+
+/* Espaçamento entre os campos */
+body#B > form .form-group {
+    width: 100%;
+    margin: 0 0 16px;
+}
+
+/* Labels alinhadas à esquerda, acima das linhas */
+body#B > form label,
+body#B > form .LR,
+body#B > form #L1 {
+    display: block;
+    width: 100%;
+    margin: 0 0 6px;
+    text-align: left;
+
+    font-family: Cambria, Cochin, Georgia,
+                 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #74353d;
+}
+
+/* Linhas de preenchimento menores e uniformes */
+body#B > form input.form-control,
+body#B > form select.form-control,
+body#B > form #I1,
+body#B > form #I2,
+body#B > form #I5,
+body#B > form #data {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 42px;
+    margin: 0;
+    padding: 8px 14px;
+
+    box-sizing: border-box;
+    background-color: #fff9fc;
+    border: 1px solid #e5b7be;
+    border-radius: 18px;
+
+    font-family: Cambria, Cochin, Georgia,
+                 'Times New Roman', serif;
+    font-size: 16px;
+    color: #49383a;
+}
+
+/* Destaque ao selecionar um campo */
+body#B > form .form-control:focus {
+    border-color: #e05f70;
+    box-shadow: 0 0 0 3px rgba(224, 95, 112, 0.15);
+    outline: none;
+}
+
+/* Área do botão: mesma largura dos campos */
+body#B > form > .d-flex {
+    display: block !important;
+    width: 100%;
+    margin: 22px 0 0 !important;
+}
+
+/* Botão grande, centralizado e uniforme */
+body#B > form button[type="submit"] {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 52px;
+    margin: 0 auto;
+
+    border: 1px solid #e05f70;
+    border-radius: 26px;
+    background-color: #e56979;
+    color: #fff9fc;
+
+    font-family: Cambria, Cochin, Georgia,
+                 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+body#B > form button[type="submit"]:hover {
+    background-color: #d95368;
+    border-color: #d95368;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 768px) {
+    body#B > form {
+        max-width: 100%;
+        margin: 24px auto 35px;
+        padding: 0 18px;
+    }
+
+    body#B > form h3 {
+        font-size: 23px;
+    }
+
+    body#B > form label,
+    body#B > form .LR,
+    body#B > form #L1 {
+        font-size: 15px;
+    }
+
+    body#B > form input.form-control,
+    body#B > form select.form-control {
+        height: 42px;
+    }
+
+    body#B > form button[type="submit"] {
+        height: 50px;
+    }
+}
