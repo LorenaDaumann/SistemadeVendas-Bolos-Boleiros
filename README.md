@@ -114,7 +114,7 @@
 
 
 
-
+---
 # Objetivo do trabalho
   O objetivo deste trabalho é desenvolver um sistema web responsivo para gerenciamento e venda de bolos, consolidando os conhecimentos práticos adquiridos ao longo do semestre em programação web e banco de dados. A aplicação será construída utilizando as tecnologias HTML, CSS, JavaScript, jQuery e PHP, integrada ao servidor XAMPP com banco de dados MySQL via phpMyAdmin. 
 
@@ -127,7 +127,7 @@ Para atender aos requisitos acadêmicos solicitados, o sistema implementará: 
 - Interface totalmente responsiva e organizada, garantindo uma navegação fluida em dispositivos desktop e mobile, seguindo as melhores práticas de indentação, componentização e documentação de código.
 
 
-
+---
 # Atividades do administrador
 - Login ;
 - Cadastrar um bolo;
