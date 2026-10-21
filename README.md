@@ -35,7 +35,6 @@
 
 - Vá no link: http://localhost/dashboard/
 - Clique em phpMyAdmin
-- Clique em Novo, escreva o nome do banco como "Aula" e crie ele (Enter)
 - Vá na aba SQL
 - Cole o seguinte código:
 
